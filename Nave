@@ -1,0 +1,32 @@
+//librerie
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.Scanner;
+
+//instaurazione della classe
+public class Nave() {
+
+    private final String nome;
+    private final String appartenenza;
+    private final String nomecod;
+    private final int annoCostruzione;
+
+//metodo costruttore
+public Studente(nome, appartenenza, nomecod, annoCostruzione)
+{
+    this.nome=nome;
+    this.appartenenza=appartenenza;
+    this.nomecod= nomecod;
+    this.annoCostruzione=annoCostruzione;
+}
+
+// Converte in una riga CSV "nomecod;nome;appartenenza;annoCostruzione"
+    public String toCsv() 
+    {
+        return String.join("; ",nomecod,nome,appartenenza,Integer.toString(annoCostruzione));
+    }
+
+}
